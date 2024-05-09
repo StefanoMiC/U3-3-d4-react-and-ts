@@ -4,6 +4,7 @@ import ClassComponent from "./components/ClassComponent";
 import FunctionalComponent from "./components/FunctionalComponent";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import FormComponent from "./components/FormComponent";
+import FetchComponent from "./components/FetchComponent";
 
 function App() {
   return (
@@ -28,8 +29,8 @@ function App() {
               </>
             }
           />
-
           <Route path="/form" element={<FormComponent />} />
+          <Route path="/fetch" element={<FetchComponent />} />
         </Routes>
       </BrowserRouter>
     </div>
